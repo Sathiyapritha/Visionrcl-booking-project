@@ -85,7 +85,7 @@ public class CommonFunctions {
     public static String calenderDate(WebElement element) {
 
         LocalDate currentDate = LocalDate.now();
-        LocalDate seventhDate = currentDate.plusDays(5);
+        LocalDate seventhDate = currentDate.plusDays(7);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         String strSeventhDate = seventhDate.format(formatter);
